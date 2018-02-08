@@ -1,0 +1,6 @@
+# Don't include in Docker image.
+
+.git
+*Dockerfile*
+*docker-compose*
+node_modules

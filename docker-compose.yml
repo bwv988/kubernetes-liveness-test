@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+  node:
+    build:
+      context: .
+      args:
+        - NODE_ENV=development
+    container_name: kubelive
+    image: bwv988/kubelive
+    command: ../node_modules/.bin/nodemon --inspect=0.0.0.0:9229
+    ports:
+      - "80:80"      
+      - "9229:9229"
+    volumes:
+      - .:/opt/app
+      - notused:/opt/app/node_modules
+    environment:
+      - NODE_ENV=development
+
+volumes:
+    notused:
