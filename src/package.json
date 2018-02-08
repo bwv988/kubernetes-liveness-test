@@ -5,9 +5,7 @@
   "description": "Kubernetes Liveness Test",
   "author": "Ralph Schlosser <ralph.schlosser@gmail.com>",
   "scripts": {
-    "start": "node backend/index.js",
-    "dev-docker": "../node_modules/nodemon/bin/nodemon.js --debug=5858",
-    "dev-host": "nodemon --debug=5858"
+    "start": "node backend/index.js"
   },
   "dependencies": {
     "express": "^4.14.1",
