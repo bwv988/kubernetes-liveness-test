@@ -35,7 +35,7 @@ app.get('/healthz', function (req, res) {
 });
 
 var server = app.listen(PORT, function () {
-  console.log('Webserver is ready');
+  console.log('The webserver is ready');
 });
 
 

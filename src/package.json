@@ -4,9 +4,6 @@
   "version": "1.0.0",
   "description": "Kubernetes Liveness Test",
   "author": "Ralph Schlosser <ralph.schlosser@gmail.com>",
-  "scripts": {
-    "start": "node backend/index.js"
-  },
   "dependencies": {
     "express": "^4.14.1",
     "morgan": "^1.8.1"

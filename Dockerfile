@@ -25,5 +25,4 @@ ENV PATH /opt/node_modules/.bin:$PATH
 WORKDIR /opt/app
 COPY src/. /opt/app
 
-nodemon --inspect=0.0.0.0:9229 ../../app/backend/index.js
-CMD ["nodemon", "-inspect=0.0.0.0:9229", "../../app/backend/index.js"]
+CMD [ "node", "backend/server.js" ]
