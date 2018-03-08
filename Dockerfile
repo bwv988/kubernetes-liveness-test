@@ -8,9 +8,7 @@ ARG PORT=80
 ENV PORT $PORT
 EXPOSE $PORT 9229
 
-HEALTHCHECK CMD curl -fs http://localhost:$PORT/healthz || exit 1
-
-# Dependencies go under /opt/node_modules
+HEALTHCHECK CMD curl -fs http://localhost:$PORT/api/alive || exit 1
 
 WORKDIR /opt
 COPY src/package.json package-lock.json* ./
