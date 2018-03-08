@@ -25,10 +25,15 @@ app.get('/api/ready', function (req, res) {
   res.send('READY\n');
 });
 
+// Manually shutdown.
+app.get('/api/shutdown', function (req, res) {
+  console.info('Shutting down...')
+  shutdown(); 
+});
+
 var server = app.listen(PORT, function () {
   console.log('Application launched.');
 });
-
 
 // Signal handling.
 process.on('SIGINT', function onSigint () {
